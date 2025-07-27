@@ -10,7 +10,7 @@ test:
 
 # Запуск тестов с покрытием
 coverage:
-	poetry run pytest --cov=scoring --cov-report=term
+	poetry run pytest --cov=infrastructure --cov-report=term
 
 # Проверки: mypy + flake8
 lint:

@@ -40,7 +40,7 @@ def main():
                 logger.info(f"Создан новый продукт: {new_product}")
             except Exception as e:
                 uow.rollback()
-                logger.exception("Ошибка при создании продукта. Отмена транзакции")
+                logger.exception("Ошибка при создании продукта. Отмена транзакции", e)
 
 
 if __name__ == "__main__":
